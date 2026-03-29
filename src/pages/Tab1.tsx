@@ -24,7 +24,7 @@ const Tab1: React.FC = () => {
         {/* Everything must be inside IonContent to be visible/centered properly */}
         <div className="container">
           <IonCard className="qr-card">
-            <img alt="QR Code" src="public/qrcode.png" />
+            <img alt="QR Code" src="qrcode.png" />
             <IonCardHeader>
               <IonCardTitle>Scan Me!</IonCardTitle>
               <IonCardSubtitle></IonCardSubtitle>
