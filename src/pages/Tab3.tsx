@@ -10,7 +10,7 @@ const Tab3: React.FC = () => {
           <IonTitle>Specter-009</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent>
         <Modal />
       </IonContent>
     </IonPage>

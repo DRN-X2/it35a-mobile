@@ -13,7 +13,7 @@ import {
 } from '@ionic/react';
 import { OverlayEventDetail } from '@ionic/core/components';
 
-function Example() {
+function Modal() {
   const modal = useRef<HTMLIonModalElement>(null);
   const input = useRef<HTMLIonInputElement>(null);
 
@@ -74,4 +74,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default Modal;
