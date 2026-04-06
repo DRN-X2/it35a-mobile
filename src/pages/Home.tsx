@@ -1,5 +1,6 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
+import Image from '../components/Image';
 import './Home.css';
 import Modal from '../components/Modal';
 
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
         </IonHeader>
         <ExploreContainer name="Home page" />
         <Modal />
+        <Image />
       </IonContent>
     </IonPage>
   );
