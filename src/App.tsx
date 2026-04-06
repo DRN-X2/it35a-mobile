@@ -1,19 +1,9 @@
-import { Redirect, Route } from 'react-router-dom';
-import {
-  IonApp,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
-  setupIonicReact
-} from '@ionic/react';
+import { Route } from 'react-router-dom';
+import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
-import Tab1 from './pages/Home';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
+import Login from './pages/Login';
+import Menu from './pages/Menu';
+import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -44,20 +34,17 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Template from './pages/Template';
-import Menu from './pages/Menu';
-import Login from './pages/Login';
+
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-     
-
-      <Route exact path="/" component={Login}></Route>
-      <Route exact path="/app" component={Menu}></Route>
-
+      <IonRouterOutlet>
+        <Route exact path="/" component={Login}></Route>
+        <Route path="/app" component={Menu}></Route>
+      </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
 );
