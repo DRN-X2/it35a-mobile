@@ -27,7 +27,7 @@ function Modal() {
 
   function onWillDismiss(event: CustomEvent<OverlayEventDetail>) {
     if (event.detail.role === 'confirm') {
-      setMessage(`Hello, ${event.detail.data}!`);
+      setMessage(`Kaya pa ba, ${event.detail.data}?`);
     }
   }
 
