@@ -1,4 +1,4 @@
-import { IonButton, IonContent, IonHeader, IonIcon, IonItem, IonMenu, IonMenuToggle, IonPage, IonRouterOutlet, IonSplitPane, IonTitle, IonToolbar, } from "@ionic/react"
+import { IonButton, IonContent, IonHeader, IonIcon, IonItem, IonMenu, IonMenuToggle, IonPage, IonRouterOutlet, IonTitle, IonToolbar, } from "@ionic/react"
 import { homeOutline, informationCircleOutline, logOutOutline } from "ionicons/icons"
 import { Redirect, Route } from "react-router-dom"
 import Home from "./Home"
